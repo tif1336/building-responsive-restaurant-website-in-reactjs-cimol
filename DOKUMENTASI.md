@@ -1,5 +1,5 @@
 # Dokumentasi Tugas 2: Membuat Website Restoran dengan ReactJS
-### Nama Kelompok: Cimol
+### Nama Kelompok: ????
 ### Anggota Kelompok
 ### 1. L200214253 Kurniawan Bagaskara
 ### 2. L200214034 Shindy Maheswari
