@@ -55,7 +55,7 @@ $ source .venv/bin/activate
 ```
 Untuk Windows Command Shell
 ```bash
-$ ./venv/Scripts/activate
+$. ./.venv/Scripts/activate
 ```
 
 ### 3. Upgrade pip
