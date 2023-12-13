@@ -1,5 +1,5 @@
 # Dokumentasi Tugas 2: Membuat Website Restoran dengan ReactJS
-### Nama Kelompok: ????
+### Nama Kelompok: Cimol
 ### Anggota Kelompok
 ### 1. L200XXXXXX Nama Lengkap 1
 ### 2. L200XXXXXX Nama Lengkap 2
