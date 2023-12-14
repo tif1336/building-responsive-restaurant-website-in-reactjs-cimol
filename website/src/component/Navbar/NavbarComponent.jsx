@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 
 const NavbarComponent = () => {
   const [profile, setProfile] = useState([]);
@@ -38,9 +38,11 @@ const NavbarComponent = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#utama-menu">Menu Utama</Nav.Link>
-                <Nav.Link href="#pembuka-menu">Menu Pembuka</Nav.Link>
-                <Nav.Link href="#penutup-menu">Menu Penutup</Nav.Link>
+                <NavDropdown title="Menu" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#utama-menu">Menu Utama</NavDropdown.Item>
+                  <NavDropdown.Item href="#pembuka-menu">Menu Pembuka</NavDropdown.Item>
+                  <NavDropdown.Item href="#penutup-menu">Menu Penutup</NavDropdown.Item>
+                </NavDropdown>
                 <Nav.Link href="#faq">Faq</Nav.Link>
               </Nav>
             </Navbar.Collapse>
