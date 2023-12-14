@@ -5,7 +5,7 @@ const Menus = () => {
   const [menu, setMenus] = useState([]);
 
   const fetchMenuData = () => {
-    fetch('http://localhost:8000/api/menus/')
+    fetch('http://localhost:8000  /api/menus/')
       .then((response) => {
         return response.json();
       })
