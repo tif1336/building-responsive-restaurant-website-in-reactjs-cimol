@@ -6,3 +6,16 @@
 <br>
 
 Silahkan anda tuliskan dokumentasi tugas anda di sini
+
+Kurniawan = Membuat Component Dasar Website
+
+Shindy = Membuat Deskripsi Restoran
+
+Kurniawan = Membuat Faq
+
+Shindy = Membuat Navbar
+
+Kurniawan = Membuat Footer
+
+Shindy = Mengubah Tampilan Menu
+
