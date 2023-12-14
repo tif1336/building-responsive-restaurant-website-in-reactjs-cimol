@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-scroll'; // Add this line
+import { Link } from 'react-scroll'; 
+
 
 const NavbarComponent = () => {
   const [profile, setProfile] = useState([]);
