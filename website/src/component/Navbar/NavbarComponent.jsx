@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-scroll'; 
-
+import { Link } from 'react-scroll';
 
 const NavbarComponent = () => {
   const [profile, setProfile] = useState([]);
@@ -24,7 +23,7 @@ const NavbarComponent = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{ position: 'sticky', top: 0, zIndex: 1000 }}>
       {loading ? (
         <p>Loading...</p>
       ) : (
@@ -45,6 +44,10 @@ const NavbarComponent = () => {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
+
+                <Nav.Link as={Link} to="home" smooth={true} duration={500}>
+                    Home
+                  </Nav.Link>
                   <NavDropdown title="Menu" id="basic-nav-dropdown">
                     <Link to="utama-menu" smooth={true} duration={500}>
                       <NavDropdown.Item>Menu Utama</NavDropdown.Item>
@@ -57,8 +60,15 @@ const NavbarComponent = () => {
                     </Link>
                   </NavDropdown>
 
-                  <Nav.Link href="#faq">Faq</Nav.Link>
+                  <Nav.Link as={Link} to="faq" smooth={true} duration={500}>
+                    FAQ
+                  </Nav.Link>
+
+                  <Nav.Link as={Link} to="footer" smooth={true} duration={500}>
+                    Contact Us
+                  </Nav.Link>
                 </Nav>
+                
               </Navbar.Collapse>
             </Container>
           </Navbar>

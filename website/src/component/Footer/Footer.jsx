@@ -24,7 +24,7 @@ const Footer = () => {
     fetchProfileData();
   }, []);
   return (
-    <div
+    <div id='footer'
       style={{
         backgroundColor: '#dee2e6',
         paddingTop: '10px',
@@ -34,11 +34,6 @@ const Footer = () => {
         <Row key={profil.id}>
           <Container fluid>
             <Row>
-              <Col sm={12}>
-                <h4 className="">{profil.name}</h4>
-                <hr />
-                <p>{profil.about_us}</p>
-              </Col>
               <Col sm={12}>
                 <h4>Contact Us</h4>
                 <hr />

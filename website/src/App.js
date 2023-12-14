@@ -4,13 +4,15 @@ import Navbarcomponent from './component/Navbar/NavbarComponent';
 import Menus from './component/Menus/Menus';
 import Footer from './component/Footer/Footer';
 import Faq from './component/Faq/Faq';
+import Home from './component/Home/Home';
+
 
 function App() {
   return (
     <div className="App">
       <Navbarcomponent />
-
-      <h1 className="">Food list</h1>
+      <Home />
+      <h1 className="">List Makanan</h1>
       <hr />
 
       <Menus />
