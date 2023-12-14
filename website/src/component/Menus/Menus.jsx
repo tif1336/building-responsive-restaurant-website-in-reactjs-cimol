@@ -4,6 +4,16 @@ import { Card, Button, Row, Col } from 'react-bootstrap';
 const Menus = () => {
   const [menus, setMenus] = useState([]);
 
+<<<<<<< HEAD
+  const fetchMenuData = () => {
+    fetch('http://localhost:8000  /api/menus/')
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setMenus(data);
+      });
+=======
   const fetchMenuData = async () => {
     try {
       const response = await fetch('http://localhost:8000/api/menus/');
@@ -15,6 +25,7 @@ const Menus = () => {
     } catch (error) {
       console.error('Error fetching menu data:', error.message);
     }
+>>>>>>> 68a32fb41fb558950f03d0afa524a173a17e83ea
   };
 
   useEffect(() => {
