@@ -1,8 +1,8 @@
 import React from "react";
 import DishesCard from "../layouts/DishesCard";
-import img1 from "../assets/img/asam-manis.jpg";
-import img2 from "../assets/img/ayam-goreng.jpg";
-import img3 from "../assets/img/bawal-bakar.jpg";
+import asamManis from "server/images/asam-manis.jpg";
+import ayamGoreng from "server/images/ayam-goreng.jpg";
+import bawalBakar from "server/images/bawal-bakar.jpg";
 
 const Menu = () => {
   return (
@@ -12,9 +12,9 @@ const Menu = () => {
       </h1>
 
       <div className="flex flex-wrap gap-8 justify-center">
-        <DishesCard img={img1} title="Delicious Dish" price="$16.99" />
-        <DishesCard img={img2} title="Delicious Dish" price="$18.99" />
-        <DishesCard img={img3} title="Delicious Dish" price="$14.99" />
+        <DishesCard images={asamManis} title="Delicious Dish" price="$16.99" />
+        <DishesCard images={ayamGoreng} title="Delicious Dish" price="$18.99" />
+        <DishesCard images={bawalBakar} title="Delicious Dish" price="$14.99" />
       </div>
     </div>
   );

@@ -1,30 +1,30 @@
 import React from "react";
-import img from "../assets/img/about.png";
+import img from "../server/logo/logo.jpg";
 import Button from "../layouts/Button";
 
 const About = () => {
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row justify-center items-center lg:px-32 px-5">
-      <img src={img} alt="img" />
+    <div className="min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
+      <h1 className="text-4xl font-semibold text-center pt-24 pb-10">
+        About Us
+      </h1>
 
-      <div className="space-y-4 lg:pt-14">
-        <h1 className="font-semibold text-4xl text-center md:text-start">
-          Why Choose Us?
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          architecto quisquam delectus minima perferendis nulla quia nisi
-          laborum, exercitationem cum quo accusantium, impedit sed. Dicta, quo
-          molestias omnis reprehenderit quae animi? Explicabo quasi accusamus
-          laboriosam temporibus delectus, aut a? Quasi?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi,
-          suscipit reiciendis accusamus recusandae eum aspernatur pariatur odit
-          veritatis facere. Magnam!
-        </p>
-        <div className="flex justify-center lg:justify-start">
-          <Button title="Learn More" />
+      <div className="flex flex-col md:flex-row gap-16">
+        <div className="w-full md:w-1/2">
+          <img src={img} alt="About Us" className="rounded-lg" />
+        </div>
+        <div className="w-full md:w-1/2">
+          <h2 className="text-2xl font-semibold mb-4">Who We Are</h2>
+          <p className="text-lg mb-4">
+            We are a passionate team dedicated to serving delicious and
+            high-quality food to our valued customers.
+          </p>
+          <p className="text-lg mb-4">
+            Our mission is to create an exceptional dining experience and make
+            your every visit memorable.
+          </p>
+          {/* Add more content as needed */}
+          <Button label="Learn More" />
         </div>
       </div>
     </div>
